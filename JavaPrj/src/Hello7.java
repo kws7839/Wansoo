@@ -1,0 +1,17 @@
+
+public class Hello7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a;
+		float b;
+		
+		a = (int) 123.45f;
+		b = 200;
+		
+		System.out.printf("a의 값 ==> %d \n", a);
+		System.out.printf("b의 값 ==> %f \n", b);
+
+	}
+
+}
