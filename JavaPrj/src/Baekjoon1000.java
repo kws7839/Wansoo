@@ -8,7 +8,7 @@ public class Baekjoon1000 {
 		int a = s.nextInt();
 		int b = s.nextInt();
 		
-		System.out.printf("%d + %d = %d", a, b, a+b);
+		System.out.println(a + b);
 		
 	}
 
