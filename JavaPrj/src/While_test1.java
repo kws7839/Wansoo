@@ -14,6 +14,7 @@ public class While_test1 {
 			j = 1;
 			i++;
 		}
-	}
+	} 
+	
 
 }
