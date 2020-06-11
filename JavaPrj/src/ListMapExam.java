@@ -36,6 +36,7 @@ public class ListMapExam {
 		// 이협건 정보가 저장된 HashMap 객체를 List
 		rList.add(pMap);
 
+		
 		pMap = null;
 		Iterator<Map<String, String>> it = rList.iterator();
 		while (it.hasNext()) {
