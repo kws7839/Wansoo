@@ -28,6 +28,16 @@ public class TestArryListHashMap {
 		rList.add(pMap);
 		
 		pMap =null;
+		
+		pMap = new HashMap<String, String>();
+		
+		pMap.put("name", "가나다");
+		pMap.put("email", "k@@");
+		pMap.put("addr", "서울");
+		
+		rList.add(pMap);
+		
+		pMap =null;
 		Iterator<Map<String, String>> it = rList.iterator();
 		//HashMap
 		while(it.hasNext()) {
