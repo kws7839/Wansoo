@@ -1,0 +1,53 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+public class HashMapList_EX {
+
+	public static void main(String[] args) {
+		List<Map<String, String>> rList = new ArrayList<>();
+		Map<String, String> pMap = new HashMap<String, String>();
+		
+		pMap.put("name", "이협건");
+		pMap.put("email", "h.lee@");
+		pMap.put("addr", "서울");
+		
+		rList.add(pMap);
+		
+		pMap = null;//꼭쓰기
+		
+		pMap = new HashMap<String, String>();
+		
+		pMap.put("name", "홍길동");
+		pMap.put("email", "g.hong");
+		pMap.put("addr", "경기");
+		
+		rList.add(pMap);
+		
+		pMap =null;
+		
+		pMap = new HashMap<String, String>();
+		
+		pMap.put("name", "만두");
+		pMap.put("email", "man");
+		pMap.put("addr", "시장");
+		
+		rList.add(pMap);
+		
+		pMap =null;
+		Iterator<Map<String, String>> it = rList.iterator();
+		//HashMap
+		while(it.hasNext()) {
+			Map<String, String> rMap = it.next();
+			//HashMap
+			System.out.println("name : " +rMap.get("name") );
+			System.out.println("email : " +rMap.get("email"));
+			System.out.println("adde : " +rMap.get("addr"));
+			rMap = null;
+			System.out.println("");
+		}
+	}
+
+}
